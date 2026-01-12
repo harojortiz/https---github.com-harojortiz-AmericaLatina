@@ -36,13 +36,13 @@ export default function PublicEventsPage() {
                     <div className="text-center py-20 text-slate-500 italic">No hay eventos próximos.</div>
                 ) : events.map((event) => (
                     <div key={event.id} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 items-center hover:shadow-md transition">
-                        <div className="w-full md:w-32 h-32 bg-blue-700 text-white rounded-3xl flex flex-col items-center justify-center shrink-0">
+                        <div className="w-full md:w-32 h-32 bg-red-700 text-white rounded-3xl flex flex-col items-center justify-center shrink-0">
                             <span className="text-4xl font-black">{new Date(event.date).getDate()}</span>
                             <span className="text-lg uppercase font-bold">{new Date(event.date).toLocaleString('es', { month: 'short' })}</span>
                         </div>
                         <div className="flex-grow">
                             <div className="flex flex-wrap gap-2 mb-2">
-                                <span className="text-xs font-bold bg-blue-50 text-blue-700 px-3 py-1 rounded-full uppercase">
+                                <span className="text-xs font-bold bg-red-50 text-red-700 px-3 py-1 rounded-full uppercase">
                                     {new Date(event.date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                 </span>
                                 {event.location && (

@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Plataforma Escuela - Gestión Institucional",
+  title: "I.E. America Latina",
   description: "Web oficial de la institución para noticias, eventos y gestión administrativa.",
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
             </main>
             <footer className="bg-slate-900 text-slate-400 py-12 mt-20">
               <div className="container mx-auto px-4 text-center">
-                <p>&copy; {new Date().getFullYear()} Escuela Institucional. Todos los derechos reservados.</p>
+                <p>&copy; {new Date().getFullYear()} I.E. America Latina. Todos los derechos reservados.</p>
               </div>
             </footer>
           </div>

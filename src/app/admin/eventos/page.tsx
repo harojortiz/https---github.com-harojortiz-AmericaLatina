@@ -65,7 +65,7 @@ export default function EventsAdminPage() {
                             <tr key={event.id} className="hover:bg-slate-50 transition">
                                 <td className="px-6 py-4">
                                     <p className="font-bold text-slate-900">{event.title}</p>
-                                    <p className="text-xs text-blue-600 font-medium">
+                                    <p className="text-xs text-red-600 font-medium">
                                         {new Date(event.date).toLocaleDateString()} {new Date(event.date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                     </p>
                                 </td>
@@ -77,7 +77,7 @@ export default function EventsAdminPage() {
                                     </span>
                                 </td>
                                 <td className="px-6 py-4 text-right space-x-3">
-                                    <Link href={`/admin/eventos/editar/${event.id}`} className="text-blue-600 hover:text-blue-800 font-medium">Editar</Link>
+                                    <Link href={`/admin/eventos/editar/${event.id}`} className="text-red-700 hover:text-red-900 font-medium">Editar</Link>
                                     <button onClick={() => handleDelete(event.id)} className="text-red-500 hover:text-red-700 font-medium">Eliminar</button>
                                 </td>
                             </tr>

@@ -39,7 +39,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <aside className="w-64 bg-slate-900 text-white flex flex-col">
                 <div className="p-6 border-b border-slate-800">
                     <p className="text-xs uppercase tracking-widest text-slate-500 font-bold mb-1">Panel Administrativo</p>
-                    <p className="text-blue-400 font-bold">{user?.fullName}</p>
+                    <p className="text-[#dc2626] font-bold">{user?.fullName}</p>
                     <p className="text-[10px] text-slate-400 uppercase">{user?.role.replace('_', ' ')}</p>
                 </div>
 
@@ -49,8 +49,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                             key={item.href}
                             href={item.href}
                             className={`block px-4 py-3 rounded-lg transition-colors font-medium ${pathname === item.href
-                                    ? 'bg-blue-600 text-white'
-                                    : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+                                ? 'bg-[#dc2626] text-white'
+                                : 'text-slate-400 hover:bg-slate-800 hover:text-white'
                                 }`}
                         >
                             {item.name}
@@ -71,7 +71,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                     </h1>
                     <div className="flex items-center space-x-4">
                         <span className="text-sm text-slate-500">{user?.email}</span>
-                        <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-xs uppercase">
+                        <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center text-red-700 font-bold text-xs uppercase">
                             {user?.fullName.charAt(0)}
                         </div>
                     </div>

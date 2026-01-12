@@ -74,23 +74,23 @@ export default function UsersAdminPage() {
             </div>
 
             {showForm && (
-                <form onSubmit={handleSubmit} className="bg-white p-6 rounded-2xl border border-blue-100 shadow-md grid md:grid-cols-2 gap-4">
-                    <div className="col-span-2 text-sm font-bold text-blue-600 mb-2 uppercase tracking-widest">Crear Nuevo Usuario</div>
+                <form onSubmit={handleSubmit} className="bg-white p-6 rounded-2xl border border-red-100 shadow-md grid md:grid-cols-2 gap-4">
+                    <div className="col-span-2 text-sm font-bold text-red-600 mb-2 uppercase tracking-widest">Crear Nuevo Usuario</div>
                     <input
                         type="text" placeholder="Nombre Completo" value={fullName} onChange={(e) => setFullName(e.target.value)} required
-                        className="px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                        className="px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-red-500"
                     />
                     <input
                         type="email" placeholder="Correo Electrónico" value={email} onChange={(e) => setEmail(e.target.value)} required
-                        className="px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                        className="px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-red-500"
                     />
                     <input
                         type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} required
-                        className="px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                        className="px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-red-500"
                     />
                     <select
                         value={role} onChange={(e) => setRole(e.target.value as Role)} required
-                        className="px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                        className="px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-red-500"
                     >
                         <option value="DOCENTE">Docente</option>
                         <option value="GERENCIA">Gerencia</option>
@@ -98,7 +98,7 @@ export default function UsersAdminPage() {
                         <option value="SUPER_ADMIN">Super Administrador</option>
                     </select>
                     <div className="col-span-2 flex justify-end">
-                        <button type="submit" disabled={creating} className="px-6 py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 disabled:opacity-50">
+                        <button type="submit" disabled={creating} className="px-6 py-2 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 disabled:opacity-50">
                             {creating ? 'Creando...' : 'Guardar Usuario'}
                         </button>
                     </div>

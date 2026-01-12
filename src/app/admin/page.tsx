@@ -35,12 +35,12 @@ export default function DashboardPage() {
     }, [user]);
 
     const cards = [
-        { name: 'Publicaciones', value: stats.posts, color: 'bg-blue-600', href: '/admin/publicaciones' },
-        { name: 'Eventos', value: stats.events, color: 'bg-amber-500', href: '/admin/eventos' },
+        { name: 'Publicaciones', value: stats.posts, color: 'bg-red-600', href: '/admin/publicaciones' },
+        { name: 'Eventos', value: stats.events, color: 'bg-red-800', href: '/admin/eventos' },
     ];
 
     if (user?.role === 'SUPER_ADMIN') {
-        cards.push({ name: 'Usuarios', value: stats.users, color: 'bg-indigo-600', href: '/admin/usuarios' });
+        cards.push({ name: 'Usuarios', value: stats.users, color: 'bg-slate-900', href: '/admin/usuarios' });
     }
 
     return (

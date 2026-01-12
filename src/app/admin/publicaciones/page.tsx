@@ -75,7 +75,7 @@ export default function PostsAdminPage() {
                                 </td>
                                 <td className="px-6 py-4 text-sm text-slate-600">{post.author.fullName}</td>
                                 <td className="px-6 py-4 text-right space-x-3">
-                                    <Link href={`/admin/publicaciones/editar/${post.id}`} className="text-blue-600 hover:text-blue-800 font-medium">Editar</Link>
+                                    <Link href={`/admin/publicaciones/editar/${post.id}`} className="text-red-700 hover:text-red-900 font-medium">Editar</Link>
                                     <button onClick={() => handleDelete(post.id)} className="text-red-500 hover:text-red-700 font-medium">Eliminar</button>
                                 </td>
                             </tr>

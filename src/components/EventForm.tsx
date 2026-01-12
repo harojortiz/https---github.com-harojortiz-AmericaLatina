@@ -56,7 +56,7 @@ export default function EventForm({ initialData, isEditing = false }: EventFormP
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         required
-                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition"
+                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-red-500 outline-none transition"
                         placeholder="Ej: Reunión de Padres de Familia"
                     />
                 </div>
@@ -67,7 +67,7 @@ export default function EventForm({ initialData, isEditing = false }: EventFormP
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
                         required
-                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition"
+                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-red-500 outline-none transition"
                     />
                 </div>
             </div>
@@ -79,7 +79,7 @@ export default function EventForm({ initialData, isEditing = false }: EventFormP
                         type="text"
                         value={location}
                         onChange={(e) => setLocation(e.target.value)}
-                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition"
+                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-red-500 outline-none transition"
                         placeholder="Ej: Auditorio Principal"
                     />
                 </div>
@@ -89,7 +89,7 @@ export default function EventForm({ initialData, isEditing = false }: EventFormP
                         id="published"
                         checked={published}
                         onChange={(e) => setPublished(e.target.checked)}
-                        className="w-5 h-5 accent-blue-600 rounded"
+                        className="w-5 h-5 accent-red-600 rounded"
                     />
                     <label htmlFor="published" className="text-sm font-bold text-slate-700">Publicar en el sitio</label>
                 </div>
@@ -118,7 +118,7 @@ export default function EventForm({ initialData, isEditing = false }: EventFormP
                 <button
                     type="submit"
                     disabled={loading}
-                    className="px-10 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-100 disabled:opacity-50"
+                    className="px-10 py-3 bg-[#dc2626] text-white rounded-xl font-bold hover:bg-[#991b1b] transition shadow-lg shadow-red-100 disabled:opacity-50"
                 >
                     {loading ? 'Guardando...' : (isEditing ? 'Actualizar' : 'Crear Evento')}
                 </button>

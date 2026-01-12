@@ -40,8 +40,8 @@ export default function ContactoPage() {
         <div className="min-h-screen bg-slate-50 py-16 px-4">
             <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-6xl font-black text-[#f15a24] mb-4 tracking-tight uppercase">Contáctanos</h1>
-                    <div className="h-2 w-32 bg-[#29abe2] mx-auto rounded-full"></div>
+                    <h1 className="text-4xl md:text-6xl font-black text-[#dc2626] mb-4 tracking-tight uppercase">Contáctanos</h1>
+                    <div className="h-2 w-32 bg-[#991b1b] mx-auto rounded-full"></div>
                     <p className="mt-6 text-slate-500 text-lg max-w-2xl mx-auto font-medium">
                         Estamos aquí para escucharte. Ponte en contacto con nosotros a través de cualquiera de nuestros canales oficiales.
                     </p>
@@ -52,7 +52,7 @@ export default function ContactoPage() {
                     <div className="space-y-6">
                         <div className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200 border border-slate-100 group hover:translate-y-[-5px] transition duration-300">
                             <div className="flex items-center gap-6">
-                                <div className="w-16 h-16 bg-[#f15a24]/10 rounded-2xl flex items-center justify-center text-[#f15a24]">
+                                <div className="w-16 h-16 bg-[#dc2626]/10 rounded-2xl flex items-center justify-center text-[#dc2626]">
                                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
@@ -66,7 +66,7 @@ export default function ContactoPage() {
 
                         <div className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200 border border-slate-100 group hover:translate-y-[-5px] transition duration-300">
                             <div className="flex items-center gap-6">
-                                <div className="w-16 h-16 bg-[#29abe2]/10 rounded-2xl flex items-center justify-center text-[#29abe2]">
+                                <div className="w-16 h-16 bg-[#dc2626]/10 rounded-2xl flex items-center justify-center text-[#dc2626]">
                                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                     </svg>
@@ -74,14 +74,14 @@ export default function ContactoPage() {
                                 <div>
                                     <h3 className="text-sm font-black text-slate-400 uppercase tracking-widest mb-1">Teléfonos</h3>
                                     <p className="text-xl font-bold text-slate-800">320-451 89 38</p>
-                                    <p className="text-lg font-bold text-[#29abe2]">316 18 88 ext:1104</p>
+                                    <p className="text-lg font-bold text-[#dc2626]">316 18 88 ext:1104</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200 border border-slate-100 group hover:translate-y-[-5px] transition duration-300">
                             <div className="flex items-center gap-6">
-                                <div className="w-16 h-16 bg-[#fbb03b]/10 rounded-2xl flex items-center justify-center text-[#fbb03b]">
+                                <div className="w-16 h-16 bg-[#dc2626]/10 rounded-2xl flex items-center justify-center text-[#991b1b]">
                                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -97,7 +97,7 @@ export default function ContactoPage() {
                     </div>
 
                     {/* Social Media & Interaction */}
-                    <div className="bg-[#f15a24] rounded-[40px] p-12 text-white flex flex-col justify-center relative overflow-hidden shadow-2xl shadow-[#f15a24]/30">
+                    <div className="bg-[#dc2626] rounded-[40px] p-12 text-white flex flex-col justify-center relative overflow-hidden shadow-2xl shadow-[#dc2626]/30">
                         {/* Decorative circles */}
                         <div className="absolute top-[-50px] right-[-50px] w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
                         <div className="absolute bottom-[-50px] left-[-50px] w-48 h-48 bg-black/10 rounded-full blur-2xl"></div>
@@ -124,7 +124,7 @@ export default function ContactoPage() {
                             </div>
 
                             <div className="mt-16 pt-12 border-t border-white/20 text-center">
-                                <p className="text-2xl font-black italic tracking-tighter opacity-80">I.E.D América Latina</p>
+                                <p className="text-2xl font-black italic tracking-tighter opacity-80">I.E. America Latina</p>
                                 <p className="text-sm font-medium mt-2 opacity-60 uppercase tracking-[0.3em]">Fe y Alegría Colombia</p>
                             </div>
                         </div>

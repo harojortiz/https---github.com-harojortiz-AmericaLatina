@@ -42,7 +42,7 @@ export default function PublicNewsPage() {
                             )}
                         </div>
                         <div className="p-6 flex flex-col flex-grow">
-                            <span className="text-xs font-bold text-blue-600 uppercase mb-2">{post.category.name}</span>
+                            <span className="text-xs font-bold text-red-600 uppercase mb-2">{post.category.name}</span>
                             <h2 className="text-xl font-bold text-slate-900 mb-3">{post.title}</h2>
                             <p className="text-slate-600 text-sm mb-6 flex-grow">{post.content}</p>
                             <div className="flex items-center justify-between text-xs text-slate-400 border-t pt-4">

@@ -3,12 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #333333;
-  --primary: #f15a24;
-  /* Naranja institucional aproximado */
+  --primary: #dc2626;
+  /* Rojo institucional */
   --primary-foreground: #ffffff;
   --secondary: #64748b;
-  --accent: #fbb03b;
-  --nav-bg: #f15a24;
+  --accent: #991b1b;
+  --nav-bg: #dc2626;
 }
 
 @media (prefers-color-scheme: dark) {
